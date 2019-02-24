@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://nateistraining.com/sitemap.xml
