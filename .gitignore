@@ -60,3 +60,5 @@ public/
 bundle-stats.json
 
 .env
+.env.yaml
+env.yaml
