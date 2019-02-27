@@ -1,15 +1,14 @@
 {
-  "name": "gatsby-starter-minimal-blog",
-  "description": "Typography driven blog, focus on the content & minimal style. Powered by MDX. Live Preview with react-live.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "name": "nate-is-training",
+  "description": "Nate's workouts as he prepares for his Ironman",
+  "version": "0.1.0",
+  "author": "Nate Amack <nate@amack.org> (https://nateamack.com)",
+  "license": "MIT",
   "dependencies": {
-    "@google-cloud/storage": "^2.4.2",
+    "@google-cloud/debug-agent": "^3.0.0",
     "@mdx-js/mdx": "^0.17.5",
     "@mdx-js/tag": "^0.17.5",
     "babel-plugin-styled-components": "^1.10.0",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
     "gatsby": "^2.1.7",
     "gatsby-mdx": "^0.3.6",
     "gatsby-plugin-catch-links": "^2.0.11",
@@ -28,8 +27,6 @@
     "gatsby-source-filesystem": "^2.0.20",
     "lodash": "^4.17.11",
     "mdx-utils": "^0.0.2",
-    "moment": "^2.24.0",
-    "octonode": "^0.9.5",
     "polished": "^3.0.0",
     "prism-react-renderer": "^0.1.5",
     "prop-types": "^15.7.2",
@@ -41,13 +38,6 @@
     "typeface-bitter": "^0.0.71",
     "typeface-open-sans": "^0.0.54"
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "lekoarts"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -61,7 +51,6 @@
     "format": "prettier \"**/*.{md,mdx} \" --write"
   },
   "devDependencies": {
-    "@types/express": "^4.16.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.14.0",
     "eslint-config-airbnb": "^17.1.0",
