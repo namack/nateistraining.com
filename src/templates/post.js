@@ -4,7 +4,6 @@ import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-
 import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from '../components'
 import config from '../../config'
 
@@ -47,6 +46,7 @@ const Title = styled.h1`
 `
 
 const PostContent = styled.div`
+  text-align: center;
   margin-top: 4rem;
 `
 
