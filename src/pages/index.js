@@ -60,8 +60,6 @@ const IndexPage = ({
           <Article
             title={post.node.frontmatter.title}
             date={post.node.frontmatter.date}
-            excerpt={post.node.excerpt}
-            timeToRead={post.node.timeToRead}
             slug={post.node.fields.slug}
             categories={post.node.frontmatter.categories}
             key={post.node.fields.slug}

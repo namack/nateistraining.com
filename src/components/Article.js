@@ -39,13 +39,7 @@ const Initiale = styled.span`
   z-index: -1;
 `
 
-const Excerpt = styled.p`
-  grid-column: -1 / 1;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-`
-
-const Article = ({ title, date, excerpt, slug, timeToRead, categories }) => {
+const Article = ({ title, date, slug, categories }) => {
   const firstChar = title.charAt(0)
 
   return (
@@ -55,7 +49,7 @@ const Article = ({ title, date, excerpt, slug, timeToRead, categories }) => {
         <Link to={slug}>{title}</Link>
       </Title>
       <Subline>
-        {date} &mdash; {timeToRead} Min Read &mdash; In{' '}
+        {date} &mdash; In{' '}
         {categories.map((cat, i) => (
           <React.Fragment key={cat}>
             {!!i && ', '}
@@ -63,7 +57,6 @@ const Article = ({ title, date, excerpt, slug, timeToRead, categories }) => {
           </React.Fragment>
         ))}
       </Subline>
-      <Excerpt>{excerpt}</Excerpt>
     </Post>
   )
 }
@@ -73,8 +66,6 @@ export default Article
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  timeToRead: PropTypes.number.isRequired,
   categories: PropTypes.array.isRequired,
 }
